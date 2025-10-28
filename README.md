@@ -268,7 +268,6 @@ Start the MCP server with Streamable transport:
 node build/index.js -t streamable
 ```
 
-
 ## 📄 License
 
 MIT@[AntV](https://github.com/antvis).
