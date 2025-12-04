@@ -16,11 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: npm
 
       - name: Update server.json version
         run: sed -i "s/{{VERSION}}/$GITHUB_REF_NAME/g" server.json
